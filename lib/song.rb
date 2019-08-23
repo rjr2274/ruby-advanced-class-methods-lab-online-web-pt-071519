@@ -54,4 +54,9 @@ class Song
     song.artist_name = data[0]
     song
   end
+
+  def self.create_from_filename(filename)
+    @@all << self.new_from_filename(filename)
+  end
+
 end
