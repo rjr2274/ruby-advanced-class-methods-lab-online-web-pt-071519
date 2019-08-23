@@ -50,6 +50,7 @@ class Song
     data = filename.split(" - ")
     song_name = data[1].split(".")
     song_name = song_name.delete("mp3")
+    binding.pry
     song.artist_name = data[0]
     song
   end
